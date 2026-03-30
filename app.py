@@ -2,7 +2,7 @@
 
 import sys
 
-from token_parser import TokenParser, Token
+from token_parser import TokenParser
 
 def main():
     if len(sys.argv) > 1:
