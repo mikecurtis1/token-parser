@@ -1,5 +1,7 @@
 import re
 
+from .token import Token
+
 class TokenParser:
     def __init__(self):
         self.op_escape = '\\'
