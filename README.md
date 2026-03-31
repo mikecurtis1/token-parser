@@ -1,7 +1,6 @@
 # Token Parser
 
-A lightweight Python utility for parsing structured query strings into discrete tokens.
-Originally developed as a PHP tokenizer, this project provides a Python implementation with both CLI-style parsing logic and an HTTP API via Flask.
+A lightweight Python utility for parsing structured query strings into discrete tokens. This project is a Python port of the [original PHP Tokenizer](https://github.com/mikecurtis1/Tokenizer) and provides a modular `TokenParser` class for handling fielded search syntax and operators. It exposes an HTTP API via Flask, allowing web clients to submit queries and receive JSON-formatted tokenized results.
 
 ---
 
