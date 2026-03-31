@@ -1,14 +1,14 @@
-# Python cache
+# --- Python ---
 __pycache__/
 *.py[cod]
 *$py.class
 
-# Environment
+# Virtual environments
 venv/
 .venv/
 .env
 
-# IDE/editor
+# --- IDE / Editor ---
 .vscode/
 .idea/
 *.swp
@@ -18,40 +18,37 @@ venv/
 .DS_Store
 Thumbs.db
 
-# Docker
+# --- Docker ---
 *.log
 *.pid
 *.sock
-*.env.*        # Any environment-specific files
 docker-compose.override.yml
+*.env.*        # any environment-specific files
 
-# Flask
+# --- Flask / App ---
 instance/
-*.db           # SQLite database files if any
+*.db           # sqlite files, if any
 *.sqlite3
+*.log          # app logs
 
-# Byte-compiled / distribution / packaging
+# --- Build / Packaging ---
 *.egg
 *.egg-info/
 dist/
 build/
-eggs/
-parts/
-bin/
-var/
 *.manifest
 *.spec
 
-# PyInstaller
+# --- PyInstaller / frozen apps ---
 *.manifest
 *.spec
 
-# mypy type checker
+# --- mypy / type checking ---
 .mypy_cache/
 .dmypy.json
 dmypy.json
 
-# coverage / testing
+# --- Testing / Coverage ---
 htmlcov/
 .coverage
 .coverage.*
@@ -62,12 +59,5 @@ coverage.xml
 *.py,cover
 .hypothesis/
 
-# Logs
-*.log
-
-# JetBrains PyCharm
-*.iml
-out/
-
-# VS Code
-.history/
+# --- Apache logs (optional) ---
+apache/logs/
