@@ -1,21 +1,21 @@
-# ---- CLI ENTRY POINT ----
-
-import sys
+from flask import Flask, request, jsonify
 
 from token_parser import TokenParser
 
-def main():
-    if len(sys.argv) > 1:
-        q = ' '.join(sys.argv[1:])
-    else:
-        q = sys.stdin.read().strip()
+app = Flask(__name__)
+
+@app.route('/parse', methods=['GET'])
+def parse():
+    # Get 'q' from query string, default to empty string
+    q = request.args.get('q', '')
 
     tokenizer = TokenParser()
     tokens = tokenizer.tokenize(q)
 
-    for t in tokens:
-        print(t)
+    # Convert tokens to something JSON-serializable if needed
+    # (assuming Token has a __str__ or simple structure)
+    return jsonify([str(t) for t in tokens])
 
 
 if __name__ == "__main__":
-    main()
+    app.run(port=8085, debug=True)
