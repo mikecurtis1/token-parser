@@ -12,14 +12,15 @@ def parse():
     tokenizer = TokenParser()
     tokens = tokenizer.tokenize(q)
 
-    return jsonify(
+    return jsonify([
         {
             "prefix": t.get_prefix(),
             "index": t.get_index(),
             "text": t.get_text(),
             "phrase": t.get_phrase()
-        } for t in tokens
-    )
+        }
+        for t in tokens
+    ])
 
 if __name__ == "__main__":
-    app.run(port=8080, debug=True)
+    app.run(port=8080, debug=False)
