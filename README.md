@@ -32,7 +32,7 @@ token-parser/
 ├─ app/
 │ ├─ app.py            ← Flask API entry point
 │ ├─ token_parser/     ← Core parsing package
-│ │ ├─ init.py
+│ │ ├─ __init__.py
 │ │ ├─ parser.py
 │ │ └─ token.py
 │ ├─ requirements.txt
@@ -67,7 +67,7 @@ cd token-parser/app
 ```
 2. Install Python dependencies:
 
-```Bash
+```bash
 pip install -r requirements.txt
 ```
 
@@ -84,7 +84,7 @@ This project uses two containers:
 
 From the root of the project:
 
-```Bash
+```bash
 docker-compose up --build
 ```
 
