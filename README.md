@@ -1,8 +1,8 @@
 # Token Parser API
 
-[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/flask-2.3-green.svg)](https://flask.palletsprojects.com/)
-[![Docker](https://img.shields.io/badge/docker-20.10-blue.svg)](https://www.docker.com/)
+[![Python](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/flask-3.0-green.svg)](https://flask.palletsprojects.com/)
+[![Docker](https://img.shields.io/badge/docker-29.2-blue.svg)](https://www.docker.com/)
 
 A lightweight Python utility for parsing structured query strings into discrete tokens. This project is a Python port of the [original PHP Tokenizer](https://github.com/mikecurtis1/Tokenizer) and provides a modular `TokenParser` class for handling fielded search syntax and operators. It exposes an HTTP API via Flask, allowing web clients to submit queries and receive JSON-formatted tokenized results.
 
