@@ -113,12 +113,12 @@ Expected output:
 
 Each token returned has the following elements:
 
-| Field  | Type   | Description                                |    |
-| ------ | ------ | ------------------------------------------ | -- |
-| prefix | string | Prefix operator if present (`+`, `-`, `\|`) |    |
-| index  | string | Index portion of the token before `:`      |    |
-| text   | string | The main token text                        |    |
-| phrase | bool   | `True` if token was a quoted phrase        |    |
+| Field  | Type   | Description                                |
+| ------ | ------ | ------------------------------------------ |
+| prefix | string | Prefix operator if present (`+`, `-`, `\|`) |
+| index  | string | Index portion of the token before `:`      |
+| text   | string | The main token text                        |
+| phrase | bool   | `True` if token was a quoted phrase        |
 
 
 ---
