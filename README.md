@@ -63,12 +63,6 @@ token-parser/
 
 ```bash
 git clone https://github.com/mikecurtis1/token-parser.git
-cd token-parser/app
-```
-2. Install Python dependencies:
-
-```bash
-pip install -r requirements.txt
 ```
 
 ---
