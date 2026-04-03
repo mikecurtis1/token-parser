@@ -88,8 +88,10 @@ docker-compose up --build
 ### Test the API
 
 ```Bash
-curl http://localhost:8085/parse?q=su%3Alove+%2Bti%3Alife+-su%3A%22one+%2B+one%22
+curl http://localhost:8080/parse?q=su%3Alove+%2Bti%3Alife+-su%3A%22one+%2B+one%22
 ```
+
+(http://localhost:8080/parse?q=su%3Alove+%2Bti%3Alife+-su%3A%22one+%2B+one%22)[http://localhost:8080/parse?q=su%3Alove+%2Bti%3Alife+-su%3A%22one+%2B+one%22]
 
 Expected output:
 
