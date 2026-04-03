@@ -11,6 +11,6 @@ services:
     build: ./apache
     container_name: tokenizer_apache
     ports:
-      - "8085:80"
+      - "8080:80"
     depends_on:
       - app
